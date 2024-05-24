@@ -5,6 +5,7 @@
 	gap: 0.75rem;
 	position: relative;
     align-items: center;
+	z-index: 0;
 }
 .banner::before {
 	display: block;
@@ -17,6 +18,7 @@
 	right: 0;
 	bottom: 0;
 	opacity: 0.4;
+	z-index: -1;
 }
 .banner .channel-icon {
 	border-radius: 1.5rem;
