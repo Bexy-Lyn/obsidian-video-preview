@@ -1,8 +1,43 @@
-/*
+.banner {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	padding: 0.75rem;
+	gap: 0.75rem;
+	position: relative;
+    align-items: center;
+}
+.banner::before {
+	display: block;
+	content: "";
+	background-color: var(--text-accent);
+	border-radius: var(--image-radius);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0.4;
+}
+.banner .channel-icon {
+	border-radius: 1.5rem;
+	overflow: hidden;
+}
+.banner .channel-icon img {
+	width: 2rem;
+	height: 2rem;
+}
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
+.banner .video-text-container:first-child {
+	grid-column: 1 / span 2;
+}
 
-If your plugin does not need CSS, delete this file.
-
-*/
+.banner .video-text-container {
+	color: var(--text-normal);
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+	gap: 6px;
+}
+a.video-metadata-container {
+	text-decoration: none 0 !important;
+}
