@@ -1,7 +1,7 @@
 {
-	"name": "obsidian-sample-plugin",
+	"name": "video-preview-plugin",
 	"version": "1.0.0",
-	"description": "This is a sample plugin for Obsidian (https://obsidian.md)",
+	"description": "Improves the look of links to videos on the web.",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
